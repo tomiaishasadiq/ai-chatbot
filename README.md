@@ -8,6 +8,7 @@ The two are different things:
 
 - **Prompt script**: sends one system prompt and one user prompt, and prints one response. There's no memory of earlier messages.
 - **Chatbot**: takes input from the user each turn and keeps the conversation history (a list of messages), so the model can follow what was said before.
+- The model has no memory of its own(promting). A prompt script sends a fixed list of two messages (system and user) once, while the chatbot rebuilds the message list on every turn, with the full conversation HISTORY in between, which is how it "remembers" earlier questions.
 
 ## Installation
 
